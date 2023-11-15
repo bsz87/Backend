@@ -1,4 +1,4 @@
-def imageName="192.168.44.44:8082/docker_registry/frontend"
+def imageName="192.168.44.44:8082/docker_registry/backend"
 def dockerTag=""
 
 def dockerRegistry="https://192.168.44.44:8082"
