@@ -83,7 +83,7 @@ pipeline
                         sh """ cd backend
                         git config --global user.email "b.szelagowski@gmail.com"
                         git config --global user.name "bsz87"
-                        sed -i "s#$imageName.*#$imageName:$dockerTag#g" deployment.yaml
+                        sed -i "s#$imageName.*#$imageName:$dockerTag#g" frontend_deploy.yaml
                         git commit -am "Set new $dockerTag tag."
                         git diff
                         git push origin master
